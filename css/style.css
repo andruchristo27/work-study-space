@@ -504,15 +504,40 @@ a:focus {
   transition: background-color 0.3s;
 }
 
+.float-button-2 {
+  margin-bottom: 50px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
 .float-button:hover {
   background-color: #000000;
   color: #ffffff;
-  /* Warna latar belakang saat tombol dihover */
+}
+
+.label-card {
+  margin-top: -60px;
+  background-color: #fefefe;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .card-body {
   padding-left: 0;
   padding-right: 0;
+}
+
+.card-body-detail {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
 }
 
 .card-text {
@@ -524,11 +549,86 @@ a:focus {
   text-align: center;
 }
 
+.card-detail {
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
 hr.divider {
   padding: 0;
   margin: 0;
 
   border-top: 1px solid rgb(0, 0, 0);
+}
+
+#map {
+  height: 160px;
+}
+
+.gallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.gallery>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery>div>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gallery .tall {
+  grid-row: span 2;
+}
+
+.side-scroll {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: nowrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#reviews-container {
+  padding: 10px;
+  overflow-x: auto;
+}
+
+#reviews-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.review {
+  display: inline-block;
+  width: 300px;
+  margin-right: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.review .card {
+  height: 100%;
+}
+
+.review .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.review .card-text {
+  flex-grow: 1;
+  overflow: auto;
 }
 
 /* footer section*/
